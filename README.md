@@ -1,4 +1,4 @@
-# TDL
+# TDL (Terminal DirectMedia Layer, renders all in terminal/tty)
 
 GitHub repo: https://github.com/ander-discord/TDL
 
