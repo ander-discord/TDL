@@ -643,15 +643,3 @@ void rendertty() {
 
     fflush(stdout);
 }
-
-// docker cp C:/Users/Cliente/source/repos/TDL/TDL/tdl.c desktop:/home/rndm_p/tdl/tdl.c
-// docker cp C:/Users/Cliente/source/repos/TDL/TDL/tdl.h desktop:/home/rndm_p/tdl/tdl.h
-// docker cp C:/Users/Cliente/source/repos/TDL/TDL/main.c desktop:/home/rndm_p/tdl/main.c
-
-// docker cp desktop:/home/rndm_p/tdl/main.out C:/Users/Cliente/source/repos/TDL/TDL/
-// docker cp desktop:/home/rndm_p/tdl/tdl.o C:/Users/Cliente/source/repos/TDL/TDL/
-
-// gcc -c tdl.c -o tdl.o
-// gcc -c main.c -o main.o
-
-// gcc main.o tdl.o -o main.out -lm -pthread
