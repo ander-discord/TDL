@@ -53,7 +53,7 @@ Returns delta time (secounds)
 
 Caps frame time to a target duration (secounds)
 
-Recommended: 30 fps
+Recommend: 30 fps
 
 Example:
 ```c
@@ -100,7 +100,7 @@ TDL uses RGB565
 
 ---
 
-### `void rendertty()`
+### `void renderclear()`
 
 Clears framebuffer
 
@@ -112,10 +112,19 @@ Flushes framebuffer to tty
 
 ---
 
-### Drawing
+## Utilities
+
+### `void settysize(int w, int h)`
+
+Renders a warning overlay when the current terminal size does not match the expected size
+
+---
+
+## Drawing
 
 ```c
 void renderpixel(int x, int y, unsigned short color, int layer);
+void renderline(int x1, int y1, int x2, int y2, unsigned short color, int layer);
 void renderrect(int x, int y, int w, int h, bool fill, unsigned short color, int layer);
 void rendertriangle(int x1, int y1, int x2, int y2, int x3, int y3, bool fill, unsigned short color, int layer);
 void rendercircle(int cx, int cy, int r, bool fill, unsigned short color, int layer);
